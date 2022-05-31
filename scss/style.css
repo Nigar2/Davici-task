@@ -1,0 +1,140 @@
+#pictures {
+  width: 100%;
+  position: relative;
+  margin-top: 30px;
+}
+
+#pictures .img1 {
+  opacity: 1;
+  position: absolute;
+}
+
+#pictures .img1 img {
+  width: 100%;
+}
+
+#pictures:hover .img1 {
+  opacity: 0;
+}
+
+#pictures .img2 {
+  -webkit-transition: .4s;
+  transition: .4s;
+  opacity: 0;
+}
+
+#pictures .img2 > img {
+  width: 100%;
+  height: 100%;
+}
+
+#pictures:hover .img2 {
+  opacity: 1;
+}
+
+#pictures:hover .asideicon {
+  opacity: 1;
+}
+
+#pictures:hover .search {
+  opacity: 1;
+}
+
+.asideicon {
+  position: absolute;
+  top: 30%;
+  right: 10px;
+  opacity: 0;
+}
+
+.asideicon ul {
+  padding: 0;
+  cursor: pointer;
+}
+
+.asideicon ul li {
+  margin: 5px 0;
+  list-style: none;
+  width: 40px;
+  height: 40px;
+  border: 1px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.asideicon ul li .bi-bag-dash {
+  font-family: 1rem;
+}
+
+.asideicon ul li:hover {
+  background-color: orangered;
+  color: white;
+}
+
+.search {
+  position: absolute;
+  top: 60%;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  width: 50px;
+  height: 50px;
+  padding-right: 10px;
+  padding-top: 10px;
+  border-top-right-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 0;
+}
+
+.search:hover {
+  background-color: orangered;
+}
+
+.text {
+  margin-top: 10px;
+}
+
+.text span {
+  color: gray;
+  font-size: 18px;
+}
+
+.text p {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.text b {
+  font-weight: 500;
+  color: gray;
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0%;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=style.css.map */
